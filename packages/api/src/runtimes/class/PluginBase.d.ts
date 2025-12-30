@@ -1,0 +1,41 @@
+import { ShutdownEvent, StartupEvent, System, World } from "@minecraft/server";
+import { Config } from "./ConfigManagers.js";
+import { EventHandlers } from "./EventHanlders.js";
+import { Logger } from "./Logger.js";
+import { PluginEventHandlers } from "./PluginEventHanlders.js";
+import type { PluginSettingOptions } from "../types/PluginSettingOptions.js";
+import { SettingMenu } from "./SettingMenuBuilders.js";
+import { SystemBase } from "./SystemBase.js";
+import type { WorldEvents } from "../types/WorldEvents.js";
+import { PlayerManagers } from "./PlayerManagers.js";
+import { ItemActionManager } from "./ItemActionManager.js";
+declare class PluginBase {
+    isLoaded: boolean;
+    events: PluginEventHandlers;
+    name: string;
+    version: string;
+    icon: string;
+    world: World;
+    system: System;
+    systemBase: SystemBase;
+    settingMenu: SettingMenu;
+    playerManagers: PlayerManagers;
+    itemActionManager: ItemActionManager;
+    isRuntime: boolean;
+    constructor(events: EventHandlers<WorldEvents>, systemBase: SystemBase);
+    get config(): Config<PluginSettingOptions>;
+    get logger(): Logger;
+    load(): void;
+    getName(): string;
+    onEnable(_ev: StartupEvent): void;
+    onLoad(): void;
+    onDisable(_ev: ShutdownEvent): void;
+    isEnabled(): boolean;
+    registerSettings(menu: typeof SettingMenu): void;
+    getPluginSettings(): PluginSettingOptions;
+    getSettings(): PluginSettingOptions;
+    getAdvancedSettings(_pl: Player, _plugin: PluginBase): (() => void) | null;
+    private initializeConfig;
+}
+export { PluginBase };
+//# sourceMappingURL=PluginBase.d.ts.map

@@ -1,0 +1,44 @@
+{
+  "name": "@axeth/api",
+  "version": "2.0.2",
+  "type": "module",
+  "author": {
+    "name": "KisuX3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "bun run build"
+  },
+  "exports": {
+    "./runtimes": {
+      "types": "./dist/runtimes/index.d.ts",
+      "import": "./dist/runtimes/index.js",
+      "default": "./dist/runtimes/index.js"
+    },
+    "./builders": {
+      "types": "./dist/builders/index.d.ts",
+      "import": "./dist/builders/index.js",
+      "default": "./dist/builders/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@minecraft/server": "^2.4.0",
+    "@minecraft/server-ui": "^2.0.0"
+  },
+  "module": "index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "axeth",
+    "axeth-api",
+    "minecraft",
+    "minecraft-bedrock",
+    "bedrock"
+  ]
+}

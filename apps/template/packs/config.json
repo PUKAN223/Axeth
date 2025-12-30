@@ -1,0 +1,23 @@
+{
+    "format_version": 2,
+    "meta": {
+        "name": "test",
+        "icon": "./packs/pack_icon.png",
+        "version": [1, 0, 0],
+        "description": "test",
+        "seed": 0,
+        "authors": ["sss"]
+    },
+    "filters": [
+        {
+            "name": "TSBuilds",
+            "config": {}   
+        },
+        {
+            "name": "ManifestBuilds",
+            "config": {}
+        }
+    ],
+    "env": {
+    }
+}

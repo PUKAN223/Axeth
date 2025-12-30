@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "{{pack_name}}",
+    "description": "{{pack_description}}",
+    "uuid": "<uuid>",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      60
+    ]
+  },
+  "modules": [
+    {
+      "description": "Resource Pack",
+      "type": "resources",
+      "uuid": "<uuid>",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "<uuid>",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

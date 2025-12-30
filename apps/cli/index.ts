@@ -1,0 +1,1 @@
+import "@axeth/create-cli"
