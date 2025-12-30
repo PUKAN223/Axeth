@@ -1,7 +1,7 @@
 {
   "name": "@axeth/create-cli",
-  "version": "2.1.5",
-  "module": "index.ts",
+  "version": "3.0.0",
+  "module": "dist/index.js",
   "type": "module",
   "bin": {
     "axeth-cli": "index.ts"
@@ -9,8 +9,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup ./src/index.ts",
     "prepublishOnly": "bun run build"
   },
   "keywords": [

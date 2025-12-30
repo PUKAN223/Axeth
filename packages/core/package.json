@@ -1,23 +1,22 @@
 {
   "name": "@axeth/core",
-  "version": "2.0.5",
-  "module": "index.ts",
+  "version": "3.0.0",
+  "module": "dist/index.js",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "default": "./dist/index.js"
-    }
-  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup ./src/index.ts",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
