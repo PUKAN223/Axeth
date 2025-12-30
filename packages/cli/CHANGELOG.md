@@ -1,5 +1,11 @@
 # @axeth/create-cli
 
+## 3.0.5
+
+### Patch Changes
+
+- 2fdbc2f: Updating template
+
 ## 3.0.4
 
 ### Patch Changes
