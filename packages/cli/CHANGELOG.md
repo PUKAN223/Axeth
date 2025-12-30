@@ -1,5 +1,11 @@
 # @axeth/create-cli
 
+## 3.0.4
+
+### Patch Changes
+
+- 9a73e29: Fixing template data
+
 ## 3.0.3
 
 ### Patch Changes
