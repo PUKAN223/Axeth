@@ -1,6 +1,6 @@
 {
   "name": "@axeth/create-cli",
-  "version": "4.0.0",
+  "version": "3.0.1",
   "module": "dist/index.js",
   "type": "module",
   "bin": {

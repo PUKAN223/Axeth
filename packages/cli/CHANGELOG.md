@@ -1,5 +1,11 @@
 # @axeth/create-cli
 
+## 3.0.1
+
+### Patch Changes
+
+- 03c6ff5: Fixing bin
+
 ## 4.0.0
 
 ### Major Changes
