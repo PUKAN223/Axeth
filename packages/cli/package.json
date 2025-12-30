@@ -1,10 +1,10 @@
 {
   "name": "@axeth/create-cli",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "module": "dist/index.js",
   "type": "module",
   "bin": {
-    "axeth-cli": "index.ts"
+    "axeth-cli": "dist/index.js"
   },
   "publishConfig": {
     "access": "public"
