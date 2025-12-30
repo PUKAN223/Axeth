@@ -1,7 +1,7 @@
 import { Filters } from "@axeth/core";
-import type { Manifest } from "./types/Manifest.ts";
+import type { Manifest } from "./types/Manifest";
 import * as esbuild from "esbuild";
-import { parseArgs } from "./utils/parseArgs.ts";
+import { parseArgs } from "./utils/parseArgs";
 import chalk from "chalk";
 import { spawn } from "bun";
 import * as fs from "fs";
@@ -36,12 +36,9 @@ class TSBuilds extends Filters {
     }
 
     this.msg(`${chalk.green("✓")} Linting passed`);
-
-    // Build AxethLib.js first (contains @axeth/api)
-    this.msg(`Building library: ${chalk.blue("AxethLib.js")}`);
     await esbuild.build({
       bundle: true,
-      entryPoints: ["@axeth/api/runtimes"],
+      entryPoints: ["@axeth/api"],
       external: [
         "@minecraft/server",
         "@minecraft/server-ui",
@@ -56,8 +53,6 @@ class TSBuilds extends Filters {
       this.msg(`Successfully built library: ${chalk.green("BP/scripts/AxethLib.js")}`);
     });
 
-    // Build main script (excludes @axeth/api)
-    this.msg(`Building script: ${chalk.green(scriptPath)}`);
     await esbuild.build({
       plugins: [
         {

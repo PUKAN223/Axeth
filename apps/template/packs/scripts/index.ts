@@ -1,5 +1,5 @@
-import { SystemBase } from "@axeth/api/runtimes";
-import { SamplePlugin } from "./plugins/SamplePlugin/index.ts";
+import { SystemBase } from "@axeth/api";
+import { SamplePlugin } from "./plugins/SamplePlugin";
 
 class AxethAPI extends SystemBase {
     public override onLoad(): void {

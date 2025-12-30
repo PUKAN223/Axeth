@@ -12,9 +12,9 @@
     "typescript": "^5"
   },
   "scripts": {
-    "lint": "bunx eslint",
+    "lint": "bun run clean && bunx eslint",
     "dev": "bun run index.ts --dev",
-    "build": "bun run ./index.ts --build",
+    "build": "bun run clean",
     "packs": "bun run ./index.ts --packs",
     "clean": "bun run ./index.ts --clean"
   },

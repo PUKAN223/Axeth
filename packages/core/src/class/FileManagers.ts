@@ -1,5 +1,5 @@
 import * as fs from "fs/promises"
-import { File } from "./File.js";
+import { File } from "./File";
 
 class FileManagers {
   constructor() {

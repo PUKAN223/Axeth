@@ -1,2 +1,14 @@
-[?9001h[?1004h[?25l[2J[m[35m[2m[H$[m[1m[2m[1Ctsc
-]0;C:\WINDOWS\system32\cmd.exe[?25h[22m[?9001l[?1004l
+[?9001h[?1004h[?25l[2J[m[35m[2m[H$[m[1m[2m[1Ctsup ./src/index.ts
+]0;C:\WINDOWS\system32\cmd.exe[?25h[22m[34mCLI [mBuilding entry: src/index.ts
+[34mCLI [mUsing tsconfig: tsconfig.json[34m
+CLI [mtsup v8.5.1[34m
+CLI [mUsing tsup config: C:\Users\KisuX3\Documents\Workspace\Axeth\packages\core\tsup.config.ts[34m
+CLI [mTarget: es2020[34m
+CLI [mCleaning output folder
+[34mESM [mBuild start
+[32mESM [m[1mdist\index.js [32m[22m15.49 KB
+ESM [m⚡️ Build success in 27ms
+[34mDTS [mBuild start
+[32mDTS [m⚡️ Build success in 1196ms
+[32mDTS [m[1mdist\index.d.ts [32m[22m4.09 KB[m
+[?9001l[?1004l

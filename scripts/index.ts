@@ -116,6 +116,6 @@ class TemplateDumper {
 
 const dumper = new TemplateDumper(
     "./apps/template",
-    "./packages/cli/src/data"
+    "./packages/cli/data"
 );
 dumper.dumpTemplates();

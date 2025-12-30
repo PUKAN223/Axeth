@@ -1,6 +1,6 @@
-import { ConfigOptions } from "../types/ConfigOptions.js";
-import { FileManagers } from "./FileManagers.js";
-import { Logger } from "./Logger.js";
+import { ConfigOptions } from "../types/ConfigOptions";
+import { FileManagers } from "./FileManagers";
+import { Logger } from "./Logger";
 
 class ConfigManagers {
   private fileManagers: FileManagers;

@@ -1,6 +1,6 @@
 import chalk from "chalk";
-import { FileManagers } from "./FileManagers.js";
-import { Logger } from "./Logger.js";
+import { FileManagers } from "./FileManagers";
+import { Logger } from "./Logger";
 
 class Filters {
     private name: string;

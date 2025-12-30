@@ -20,7 +20,9 @@
   },
   "packageManager": "bun@1.3.4",
   "workspaces": [
-    "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "tsup": "^8.5.1"
+  }
 }

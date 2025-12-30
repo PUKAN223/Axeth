@@ -2,17 +2,17 @@ import chalk from "chalk";
 import JSZip from "jszip";
 import * as fs from "fs/promises";
 import path from "path";
-import { FilterManagers, Filters } from "./FilterManagers.js";
-import { FileManagers } from "./FileManagers.js";
-import { Logger } from "./Logger.js";
-import { ConfigOptions } from "../types/ConfigOptions.js";
-import { PackBuilderOptions } from "../types/PackBuilderOptions.js";
+import { FilterManagers, Filters } from "./FilterManagers";
+import { FileManagers } from "./FileManagers";
+import { Logger } from "./Logger";
+import { ConfigOptions } from "../types/ConfigOptions";
+import { PackBuilderOptions } from "../types/PackBuilderOptions";
 
 class PackBuilder {
   private packsPath: string = "./packs";
   private distPath: string = "./data/dist";
   private addonsPath: string = "./data/dist/addons";
-  private filtersPath: string = path.join(process.cwd(), "data", "filters", "<filtersName>", "index.js");
+  private filtersPath: string = path.join(process.cwd(), "data", "filters", "<filtersName>", "index");
   private filterManagers: FilterManagers;
   private fileManagers: FileManagers;
   private logger: Logger;

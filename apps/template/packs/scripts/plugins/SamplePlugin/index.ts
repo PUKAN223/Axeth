@@ -1,4 +1,4 @@
-import { PluginBase } from "@axeth/api/runtimes";
+import { PluginBase } from "@axeth/api";
 
 class SamplePlugin extends PluginBase {
     public override onLoad(): void {

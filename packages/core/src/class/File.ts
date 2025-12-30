@@ -1,5 +1,5 @@
-import type { FileOptions } from "../types/FileOptions.js";
-import { FileManagers } from "./FileManagers.js";
+import type { FileOptions } from "../types/FileOptions";
+import { FileManagers } from "./FileManagers";
 
 class File {
   private name: string;

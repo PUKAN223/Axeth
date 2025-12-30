@@ -1,5 +1,5 @@
 import { ConfigManagers, Filters } from "@axeth/core";
-import type { Manifest } from "./types/Manifest.ts";
+import type { Manifest } from "./types/Manifest";
 import chalk from "chalk";
 import * as fs from "fs";
 
