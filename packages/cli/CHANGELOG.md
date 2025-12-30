@@ -1,5 +1,11 @@
 # @axeth/create-cli
 
+## 3.0.3
+
+### Patch Changes
+
+- bf74b63: Fixing function getVersion
+
 ## 3.0.2
 
 ### Patch Changes
